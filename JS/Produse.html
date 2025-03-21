@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Produse</title>
 </head>
 <style>
@@ -10,6 +11,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f6fc;
+            overflow-x: hidden;
         }
 
         nav {
@@ -30,6 +32,7 @@
         .link {
     display: flex;
     gap: 15px; 
+    margin-right: 20px;
     
         }
         .link a {
@@ -45,7 +48,7 @@
         }
         .Search {
             width: 100%;
-            width: 450px;
+            width: 400px;
             padding: 5px 10px;
             border: none;
             border-radius: 15px;
@@ -62,6 +65,70 @@
             width: 250px;
             border-radius: 25px;
         }
+        .footer {
+    background-color: #050a30;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #f4f6fc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d3d3d3;
+}
+
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #d3d3d3;
+    transform: scale(1.1);
+}
+
+.footer-text {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 10px;
+   opacity:0.8;
+}
+
+.P:hover {
+    transform: scale(1.05);
+ }
+    
 
 
 </style>
@@ -76,9 +143,10 @@
         <div class="link">
             <a href="atestat.html">Acasa</a>
             <a href="Produse.html">Produse</a>
-            <a href="#">Despre noi</a>
-            <a href="#">Locatie</a>
-            <a href="#">Contact</a>
+            <a href="./DespreNoi.html">Despre noi</a>
+            <a href="./formular.html" >Contact</a>
+            <a href="./Cos.html" ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a>
+        
         </div>
     </nav>
  <br>
@@ -90,40 +158,40 @@
         <a href="Dior.html">
             <img src="/Produs2.png" alt="" class="P">
         </a>
-        <a href="">
+        <a href="Laneige.html">
             <img src="/Produs3.png" alt="" class="P">
         </a>
-        <a href="">
+        <a href="Rare.Beauty.html">
             <img src="/Produs4.png" alt="" class="P">
         </a>
 
     </div>
     <div class="Produse">
-        <a href="">
+        <a href="Tarte.html">
             <img src="/Produs5.png" alt="" class="P">
         </a>
-        <a href="">
+        <a href="MakeupByMario.html">
             <img src="/produs6.png" alt="" class="P">
         </a>
-        <a href="">
+        <a href="Gisou.html">
             <img src="/Produs7.png" alt="" class="P">
         </a>
-        <a href="">
+        <a href="TooFaced.html">
             <img src="/Produs8.png" alt="" class="P">
         </a>
 
     </div>
     <div class="Produse">
-        <a href="">
+        <a href="Benefit.html">
             <img src="/Produs9.png" alt="" class="P">
         </a>
-        <a href="">
+        <a href="FentyBeauty.html">
             <img src="/Produs10.png" alt="" class="P">
         </a>
-        <a href="">
+        <a href="YSL.html">
             <img src="/Produs11.png" alt="" class="P">
         </a>
-        <a href="">
+        <a href="Nars.html">
             <img src="/Produs12.png" alt="" class="P">
         </a>
 
@@ -133,4 +201,22 @@
 
 
 </body>
+<footer class="footer">
+    <div class="footer-links">
+        <a href="./atestat.html">Acasa</a>
+        <a href="./Produse.html">Produse</a>
+        <a href="./DespreNoi.html">Despre noi</a>
+        <a href="./formular.html">Contact</a>
+          </div>
+    
+   
+    <div class="social-icons">
+        <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="" class="social-icon"><i class="fab fa-youtube"></i></a>
+    </div>
+    
+    <p class="footer-text">© 2025 Glow. All rights reserved.</p>
+</footer>
 </html>

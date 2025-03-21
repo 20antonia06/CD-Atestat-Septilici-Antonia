@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Dior Backstage Glow Face Palette</title>
     <style>
          body {
             margin: 0;
             padding: 0;
             background-color: #f4f6fc;
+            overflow-x: hidden;
         }
 
         nav {
@@ -26,6 +28,10 @@
             height: 60px;
     
         }
+        .link {
+    display: flex;
+    gap: 10px; 
+    margin-right: 20px;}
         .link a {
     color: #f4f6fc;
     font-size: 16px;
@@ -39,7 +45,7 @@
         }
         .Search {
             width: 100%;
-            width: 450px;
+            width: 400px;
             padding: 5px 10px;
             border: none;
             border-radius: 15px;
@@ -86,6 +92,70 @@
             justify-content: center;
             margin-bottom: 20px;
         }
+        #section1 {
+scroll-behavior: smooth;
+  height: 100px;
+}
+.footer {
+    background-color: #050a30;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: #f4f6fc;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d3d3d3;
+}
+
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #d3d3d3;
+    transform: scale(1.1);
+}
+
+.footer-text {
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 10px;
+   opacity:0.8;
+}
+
     </style>
 </head>
 <body>
@@ -99,10 +169,10 @@
         <div class="link">
             <a href="atestat.html">Acasa</a>
             <a href="Produse.html">Produse</a>
-            <a href="#">Despre noi</a>
-            <a href="#">Locatie</a>
-            <a href="#">Contact</a>
-            <a href=""></a>
+            <a href="./DespreNoi.html">Despre noi</a>
+            <a href="./formular.html" >Contact</a>
+            <a href="./Cos.html" ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a>
+        
         </div>
     </nav>
 
@@ -110,19 +180,19 @@
         <img src="/D-highlighter001.jpg" alt="" class="img">
         <div class="text">
         <div class="Titlu">
-        <p>Dior Backstage Glow Face Palette - Paletă multifuncțională pentru machiaj</p>
+        <p>Dior Backstage Glow Face Palette- Paletă multifuncțională pentru machiaj</p>
         </div>
         <div class="info">
         <p>001 Universal Neutral</p>
         <p>275,00 Lei</p>
         </div>
-        <div class="info">
-            <a href="">
-                <input type="button" value="Afla mai multe" style="background-color: #050a30; width: 150px ; height: 40px; border-radius: 15px; border: none; color: #f4f6fc;">
+        <div class="info" id="section1">
+            <a href="#section2">
+                <input type="button" value="Afla mai multe" style="cursor: pointer; background-color: #050a30; width: 150px ; height: 40px; border-radius: 15px; border: none; color: #f4f6fc;">
             </a>
             <a href="">
-                <input type="button" value="Adauga in cos" style="background-color: #050a30; width: 150px ; height: 40px; border-radius: 15px; border: none; color: #f4f6fc;">
-            </a>
+                <input type="button" value="Adauga in cos" id="add-to-cart" style="cursor: pointer; background-color: #050a30; width: 150px ; height: 40px; border-radius: 15px; border: none; color: #f4f6fc;">
+              </a>
             </div>
         </div>
 
@@ -132,7 +202,7 @@
     <br>
     <br>
 
-<p style="padding: 40px;">Emblematica paletă multifuncțională de machiaj pentru față. Dior Backstage Glow Face Palette reprezintă secretul artiștilor de machiaj de la Dior pentru strălucire instantanee cu rezultate profesioniste, de la un efect de strălucire naturală până la luminozitate intensă.
+<p id="section2" style="padding: 40px;">Emblematica paletă multifuncțională de machiaj pentru față. Dior Backstage Glow Face Palette reprezintă secretul artiștilor de machiaj de la Dior pentru strălucire instantanee cu rezultate profesioniste, de la un efect de strălucire naturală până la luminozitate intensă.
 
     Inspirată de 001 Universal Neutrals, paleta cu nuanțe universale, și 002 Glitz, armonia care include nuanțe intense, strălucitoare, Dior Backstage a creat 3 noi* palete pentru machiaj. Fiecare paletă conține patru nuanțe cu tonuri aurii, pentru a crea numeroase lookuri care se potrivesc tuturor tipurilor de piele:
     
@@ -142,10 +212,49 @@
 
 <div class="button">
 <a href="Dior.html">
-<input type="button" value="Huda Beauty" style=" background-color: #050a30; width: 100px ; height: 30px; border-radius: 15px; border: none; color: #f4f6fc;">
+<input type="button" value="Dior" style="cursor: pointer; background-color: #050a30; width: 100px ; height: 30px; border-radius: 15px; border: none; color: #f4f6fc;">
 </a>
 </div>
 
+<script>
+    document.getElementById('add-to-cart').addEventListener('click', function() {
+        const product = {
+            name: "Dior Backstage Glow Face Palette 001",
+            price: "275,00 Lei",
+            image: "/D-highlighter001.jpg"
+        };
+
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        cart.push(product);
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        window.location.href = "cos.html";
+        alert("Produsul a fost adăugat în coș!");
+    });
+</script>
+
+
+
 </body>
+<footer class="footer">
+    <div class="footer-links">
+        <a href="./atestat.html">Acasa</a>
+        <a href="./Produse.html">Produse</a>
+        <a href="./DespreNoi.html">Despre noi</a>
+        <a href="./formular.html">Contact</a>
+          </div>
+    
+   
+    <div class="social-icons">
+        <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="" class="social-icon"><i class="fab fa-youtube"></i></a>
+    </div>
+    
+    <p class="footer-text">© 2025 Glow. All rights reserved.</p>
+</footer>
 </html>
 
