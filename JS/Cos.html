@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AZnBA721hOQuXyR7xVPOhXSR1yPl-AwVt6RxcMjRR7fyca7k8HOrk-XIdJJPf7fpT3v01a564GfhQwkG&enable-funding=venmo&currency=EUR"
+        data-sdk-integration-source="button-factory"></script>
+
     <title>Cosul meu</title>
-    <style>  
+    <style>
         body {
             margin: 0;
             padding: 0;
@@ -15,36 +20,41 @@
 
         nav {
             width: 100vw;
-            background-color:#050a30;
+            background-color: #050a30;
             height: 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            
+
         }
-        .logo{
+
+        .logo {
             margin-left: 5px;
             width: 80px;
             height: 60px;
-    
+
         }
+
         .link {
-    display: flex;
-    gap: 10px; 
-    margin-right: 20px;
-    
+            display: flex;
+            gap: 10px;
+            margin-right: 20px;
+
         }
+
         .link a {
-    color: #f4f6fc;
-    font-size: 16px;
-    font-weight: bold;
+            color: #f4f6fc;
+            font-size: 16px;
+            font-weight: bold;
         }
+
         .search-container {
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             padding: 5px 10px;
-            
+
         }
+
         .Search {
             width: 400px;
             padding: 5px 10px;
@@ -53,7 +63,7 @@
             font-size: 15px;
         }
 
-        
+
         .cart-item {
             display: flex;
             justify-content: space-between;
@@ -63,11 +73,13 @@
             border: 1px solid #ddd;
             border-radius: 10px;
         }
+
         .cart-item img {
             width: 80px;
             height: 80px;
             object-fit: cover;
         }
+
         .cart-item button {
             background-color: #050a30;
             color: #f4f6fc;
@@ -76,90 +88,101 @@
             border-radius: 10px;
             cursor: pointer;
         }
+
         .total {
             text-align: end;
-            margin-right: 20px;
+            margin-right: 120px;
             margin-top: 20px;
             font-size: 20px;
             font-weight: bold;
         }
 
         .footer {
-    background-color: #050a30;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 50px;
-}
+            background-color: #050a30;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
 
-.footer-container {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        .footer-container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 15px;
-}
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
 
-.footer-links a {
-    color: #f4f6fc;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s;
-}
+        .footer-links a {
+            color: #f4f6fc;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
 
-.footer-links a:hover {
-    color: #d3d3d3;
-}
+        .footer-links a:hover {
+            color: #d3d3d3;
+        }
 
 
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
 
-.social-icon {
-    font-size: 24px;
-    color: #ffffff;
-    transition: 0.3s;
-}
+        .social-icon {
+            font-size: 24px;
+            color: #ffffff;
+            transition: 0.3s;
+        }
 
-.social-icon:hover {
-    color: #d3d3d3;
-    transform: scale(1.1);
-}
+        .social-icon:hover {
+            color: #d3d3d3;
+            transform: scale(1.1);
+        }
 
-.footer-text {
-    color: #ffffff;
-    font-size: 14px;
-    margin-top: 10px;
-   opacity:0.8;
-}
+        .footer-text {
+            color: #ffffff;
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
+        #paypal-button-container {
+            transform: scale(0.8);
+            margin-left: 800px;
+        }
     </style>
 
 </head>
+
 <body>
     <nav>
         <img src="/logo.png" alt="Logo" class="logo">
-       
+
         <div class="search-container">
             <input type="search" class="Search" placeholder="Search">
         </div>
-       
+
         <div class="link">
             <a href="atestat.html">Acasa</a>
             <a href="Produse.html">Produse</a>
             <a href="./DespreNoi.html">Despre noi</a>
-            <a href="./formular.html" >Contact</a>
-            <a href="./Cos.html" ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a>
+            <a href="./formular.html">Contact</a>
+            <a href="./Cos.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#e3e3e3">
+                    <path
+                        d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                </svg></a>
         </div>
 
 
@@ -169,9 +192,10 @@
     <div id="cart-container" style="padding: 20px;"></div>
 
     <div class="total">
-        <p>Total: <span id="total-price">0 Lei</span></p>
+        <p> <span id="total-price">0 Euro</span></p>
     </div>
-    <button class="order-button" onclick="placeOrder()">Plasează comanda</button>
+    <div id="paypal-button-container"></div>
+
     <br>
     <br>
     <br>
@@ -179,82 +203,89 @@
     <br>
     <br>
     <br>
-    <br>
+
     <script>
+        //  Funcție care actualizează coșul de cumpărături
         function updateCart() {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            const cartContainer = document.getElementById('cart-container');
-            const totalPriceElement = document.getElementById('total-price');
-            let total = 0;
+            const cart = JSON.parse(localStorage.getItem('cart')) || []; // Ia produsele din localStorage
+            const cartContainer = document.getElementById('cart-container'); // Div-ul unde se vor afișa produsele
+            const totalPriceElement = document.getElementById('total-price'); // Elementul unde se va afișa totalul
+            let total = 0; // Variabilă pentru suma totală
 
-            cartContainer.innerHTML = '';
+            cartContainer.innerHTML = ''; // Șterge conținutul vechi
 
-            if (cart.length === 0) {
+            if (cart.length === 0) { // Dacă coșul e gol, afișează mesaj și ascunde butonul PayPal
                 cartContainer.innerHTML = '<p>Coșul este gol.</p>';
-                totalPriceElement.textContent = '0 Lei';
+                totalPriceElement.textContent = '0 Euro';
+                document.getElementById("paypal-button-container").innerHTML = ""; // Ascunde butonul PayPal
                 return;
             }
 
+            //  Parcurge fiecare produs din coș și îl afișează
             cart.forEach((item, index) => {
-                const cartItemDiv = document.createElement('div');
-                cartItemDiv.classList.add('cart-item');
+                const cartItemDiv = document.createElement('div'); // Creează un div pentru produs
+                cartItemDiv.classList.add('cart-item'); // Adaugă clasa CSS
 
-
+                //  Conținutul HTML al produsului
                 cartItemDiv.innerHTML = `
-                    <img src="${item.image}" alt="${item.name}">
-                    <div>
-                        <p>${item.name}</p>
-                        <p>${item.price}</p>
-                    </div>
-                    <button onclick="removeFromCart(${index})">Elimină</button>
-                `;
+                <img src="${item.image}" alt="${item.name}" width="100">
+                <div>
+                    <p>${item.name}</p>
+                    <p>${item.price}</p>
+                </div>
+                <button onclick="removeFromCart(${index})">Elimină</button> <!-- Buton de ștergere -->
+            `;
 
-                cartContainer.appendChild(cartItemDiv);
+                cartContainer.appendChild(cartItemDiv); // Adaugă produsul în coș
 
-        
-                const price = parseFloat(item.price.replace(' Lei', '').replace(',', '.'));
-                total += price;
+                const price = parseFloat(item.price.replace(' Euro', '').replace(',', '.')); // Transformă prețul în număr
+                total += price; // Adaugă prețul la total
             });
 
-            totalPriceElement.textContent = `${total.toFixed(2)} Lei`;
+            totalPriceElement.textContent = `Total: ${total / 5 .toFixed(2)} Euro`; // Afișează totalul formatat
+
+            renderPayPalButton(total); // Apelează funcția care afișează butonul PayPal
         }
 
+        //  Funcție care elimină un produs din coș
         function removeFromCart(index) {
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cart.splice(index, 1); 
-            localStorage.setItem('cart', JSON.stringify(cart)); 
-            updateCart(); 
+            let cart = JSON.parse(localStorage.getItem('cart')) || []; // Ia coșul din localStorage
+            cart.splice(index, 1); // Șterge produsul de la indexul dat
+            localStorage.setItem('cart', JSON.stringify(cart)); // Salvează noul coș în localStorage
+            updateCart(); // Reîmprospătează coșul
         }
 
+        // Funcție care afișează butonul PayPal și gestionează plata
+        function renderPayPalButton(total) {
+            document.getElementById("paypal-button-container").innerHTML = ""; // Curăță orice buton existent
 
-        function placeOrder() {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            if (cart.length === 0) {
-                alert("Coșul este gol!");
-                return;
-            }
-            
-            const formUrl = "";
-            const formData = new FormData();
-            formData.append("entry.YOUR_ENTRY_ID_1", cart.map(item => item.name).join(", "));
-            formData.append("entry.YOUR_ENTRY_ID_2", document.getElementById('total-price').textContent);
-            
-            fetch(formUrl, {
-                method: "POST",
-                body: formData,
-                mode: "no-cors"
-            }).then(() => {
-                alert("Comanda a fost plasată cu succes!");
-                localStorage.removeItem('cart');
-                updateCart();
-            }).catch(error => console.error('Error:', error));
+            paypal.Buttons({
+                // Creează o comandă PayPal cu suma totală
+                createOrder: function (data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: { value: total / 5 .toFixed(2) } // Suma totală de plată
+                        }]
+                    });
+                },
+                //  Când plata este aprobată
+                onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (details) {
+                        localStorage.removeItem('cart'); // Șterge coșul după plată
+                        updateCart(); // Actualizează interfața
+                        document.getElementById('cart-container').innerHTML = '<h2>Vă mulțumim pentru achiziție!</h2>'
+                    });
+                },
+                //  Dacă apare o eroare la plată
+                onError: function (err) {
+                    console.error(err);
+                    alert("A apărut o eroare la plată. Încercați din nou."); // Mesaj de eroare
+                }
+            }).render("#paypal-button-container"); // Afișează butonul PayPal în containerul specificat
         }
-        
-       
 
-        updateCart();
+        updateCart(); //  Inițializează coșul la încărcarea paginii
     </script>
-
 
 
 
@@ -265,20 +296,17 @@
         <a href="./Produse.html">Produse</a>
         <a href="./DespreNoi.html">Despre noi</a>
         <a href="./formular.html">Contact</a>
-          </div>
-    
-   
+    </div>
+
+
     <div class="social-icons">
         <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
         <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
         <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
         <a href="" class="social-icon"><i class="fab fa-youtube"></i></a>
     </div>
-    
+
     <p class="footer-text">© 2025 Glow. All rights reserved.</p>
 </footer>
+
 </html>
-
-
-
-

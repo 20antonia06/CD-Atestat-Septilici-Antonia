@@ -1,169 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Despre noi</title>
     <style>
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        background-color: #050a30;
-        color: #f4f6fc;
-    }
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-color: #050a30;
+            color: #f4f6fc;
+        }
 
-    nav {
-        width: 100vw;
-        background-color:#050a30;
-        height: 60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-    }
-    .logo{
-        margin-left: 5px;
-        width: 80px;
-        height: 60px;
+        nav {
+            width: 100vw;
+            background-color: #050a30;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-    }
-    .link {
-display: flex;
-gap: 10px; 
-margin-right: 20px;
+        }
 
-    }
-    .link a {
-color: #f4f6fc;
-font-size: 16px;
-font-weight: bold;
-    }
-    .search-container {
-        display: flex;
-        justify-content: center; 
-        padding: 5px 10px;
-        
-    }
-    .Search {
-        width: 400px;
-        padding: 5px 10px;
-        border: none;
-        border-radius: 15px;
-        font-size: 15px;
-    }
-    .img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
-    }
-    .text{
-        padding: 20px ;
-    }
-   
-    .footer {
-    background-color: #050a30;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 50px;
-    box-shadow: 0 6px 20px rgb(244, 242, 242);
-}
+        .logo {
+            margin-left: 5px;
+            width: 80px;
+            height: 60px;
 
-.footer-container {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        }
 
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 15px;
-}
+        .link {
+            display: flex;
+            gap: 10px;
+            margin-right: 20px;
 
-.footer-links a {
-    color: #f4f6fc;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s;
-}
+        }
 
-.footer-links a:hover {
-    color: #d3d3d3;
-}
+        .link a {
+            color: #f4f6fc;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            padding: 5px 10px;
+
+        }
+
+        .Search {
+            width: 400px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 15px;
+            font-size: 15px;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .text {
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: #050a30;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+            box-shadow: 0 6px 20px rgb(244, 242, 242);
+        }
+
+        .footer-container {
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #f4f6fc;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #d3d3d3;
+        }
 
 
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
-}
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
 
-.social-icon {
-    font-size: 24px;
-    color: #ffffff;
-    transition: 0.3s;
-}
+        .social-icon {
+            font-size: 24px;
+            color: #ffffff;
+            transition: 0.3s;
+        }
 
-.social-icon:hover {
-    color: #d3d3d3;
-    transform: scale(1.1);
-}
+        .social-icon:hover {
+            color: #d3d3d3;
+            transform: scale(1.1);
+        }
 
-.footer-text {
-    color: #ffffff;
-    font-size: 14px;
-    margin-top: 10px;
-   opacity:0.8;
-}
-    
-
-</style>
+        .footer-text {
+            color: #ffffff;
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+    </style>
 </head>
+
 <body>
     <nav>
         <img src="/logo.png" alt="Logo" class="logo">
-       
+
         <div class="search-container">
             <input type="search" class="Search" placeholder="Search">
         </div>
-       
+
         <div class="link">
             <a href="atestat.html">Acasa</a>
             <a href="Produse.html">Produse</a>
             <a href="./DespreNoi.html">Despre noi</a>
-            <a href="./formular.html" >Contact</a>
-            <a href="./Cos.html" ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg></a>
-        
+            <a href="./formular.html">Contact</a>
+            <a href="./Cos.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                    width="24px" fill="#e3e3e3">
+                    <path
+                        d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
+                </svg></a>
+
         </div>
     </nav>
 
     <div class="img">
         <img style="width: 1100px;" src="/despre.noi.png" alt="">
         <br>
-    <br>
+        <br>
     </div>
     <div class="text">
-        <p>Bine ai venit la Glow, locul unde frumusețea întâlnește pasiunea și inovația! Suntem mai mult decât un simplu magazin de cosmetice – suntem partenerul tău de încredere în călătoria spre un look perfect și o piele sănătoasă.
-            La Glow, credem că fiecare persoană merită să se simtă bine în pielea ei, iar produsele de înfrumusețare nu sunt doar un lux, ci o modalitate de a-ți exprima stilul și personalitatea. De aceea, ne dedicăm selecției celor mai bune branduri din industria frumuseții, oferind o gamă variată de produse pentru toate tipurile de piele și preferințe.</p>
+        <p>Bine ai venit la Glow, locul unde frumusețea întâlnește pasiunea și inovația! Suntem mai mult decât un simplu
+            magazin de cosmetice – suntem partenerul tău de încredere în călătoria spre un look perfect și o piele
+            sănătoasă.
+            La Glow, credem că fiecare persoană merită să se simtă bine în pielea ei, iar produsele de înfrumusețare nu
+            sunt doar un lux, ci o modalitate de a-ți exprima stilul și personalitatea. De aceea, ne dedicăm selecției
+            celor mai bune branduri din industria frumuseții, oferind o gamă variată de produse pentru toate tipurile de
+            piele și preferințe.</p>
         <h3>Ce ne face speciali?</h3>
         <ul>
-            <li>🌿 Calitate și siguranță – Alegem doar produse testate, formulate cu ingrediente sigure și eficiente, astfel încât să te poți bucura de rezultate vizibile fără compromisuri.</li>
-            <li>💖 Varietate pentru toate gusturile – De la machiaj profesional la îngrijirea pielii și parfumuri rafinate, Glow îți oferă tot ce ai nevoie pentru un ritual de frumusețe complet.</li>
-            <li>✨ Tendințe și inovații – Suntem mereu la curent cu cele mai noi lansări și trenduri din industria beauty, astfel încât să îți putem oferi produse inovatoare care să te ajute să îți pui în valoare frumusețea naturală.</li>
-            <li>📦 Experiență de shopping plăcută – Indiferent dacă alegi să vizitezi magazinul nostru fizic sau să comanzi online, îți garantăm o experiență simplă, rapidă și plăcută.</li>
+            <li>🌿 Calitate și siguranță – Alegem doar produse testate, formulate cu ingrediente sigure și eficiente,
+                astfel încât să te poți bucura de rezultate vizibile fără compromisuri.</li>
+            <li>💖 Varietate pentru toate gusturile – De la machiaj profesional la îngrijirea pielii și parfumuri
+                rafinate, Glow îți oferă tot ce ai nevoie pentru un ritual de frumusețe complet.</li>
+            <li>✨ Tendințe și inovații – Suntem mereu la curent cu cele mai noi lansări și trenduri din industria
+                beauty, astfel încât să îți putem oferi produse inovatoare care să te ajute să îți pui în valoare
+                frumusețea naturală.</li>
+            <li>📦 Experiență de shopping plăcută – Indiferent dacă alegi să vizitezi magazinul nostru fizic sau să
+                comanzi online, îți garantăm o experiență simplă, rapidă și plăcută.</li>
         </ul>
-     <br>
+        <br>
         <p>Misiunea noastră</p>
-        <p>Misiunea Glow este de a inspira încredere și autenticitate prin frumusețe. Ne dorim ca fiecare client să se simtă special, să descopere produse care îi pun în valoare trăsăturile și să se bucure de o îngrijire de calitate.</p>
-        <p>Pentru noi, frumusețea înseamnă mai mult decât un aspect fizic – este o stare de bine, un moment de răsfăț și o formă de auto-exprimare. De aceea, continuăm să dezvoltăm și să aducem în magazinul nostru produse care îți oferă nu doar rezultate vizibile, ci și o experiență deosebită.</p>
+        <p>Misiunea Glow este de a inspira încredere și autenticitate prin frumusețe. Ne dorim ca fiecare client să se
+            simtă special, să descopere produse care îi pun în valoare trăsăturile și să se bucure de o îngrijire de
+            calitate.</p>
+        <p>Pentru noi, frumusețea înseamnă mai mult decât un aspect fizic – este o stare de bine, un moment de răsfăț și
+            o formă de auto-exprimare. De aceea, continuăm să dezvoltăm și să aducem în magazinul nostru produse care
+            îți oferă nu doar rezultate vizibile, ci și o experiență deosebită.</p>
         <h3>💎 Glow – Magia frumuseții începe aici! 💎</h3>
     </div>
 
@@ -175,16 +200,17 @@ font-weight: bold;
         <a href="./Produse.html">Produse</a>
         <a href="./DespreNoi.html">Despre noi</a>
         <a href="./formular.html">Contact</a>
-          </div>
-    
-   
+    </div>
+
+
     <div class="social-icons">
         <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
         <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
         <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
         <a href="" class="social-icon"><i class="fab fa-youtube"></i></a>
     </div>
-    
+
     <p class="footer-text">© 2025 Glow. All rights reserved.</p>
 </footer>
+
 </html>
